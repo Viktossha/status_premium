@@ -1,0 +1,31 @@
+.footer {
+  background-color: #0D141B;
+  padding: 34px 0;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  opacity: 0.35;
+}
+
+.footer__phone {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 22px;
+
+    a{
+      color: #61666B;
+      font-style: normal;
+      font-weight: 300;
+    }
+
+  svg {
+    fill: #61666B;
+  }
+}

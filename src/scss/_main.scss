@@ -1,0 +1,21 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+
+  h1 {
+    margin: 135px 15px;
+  }
+}
+
+form {
+  max-width: 278px;
+  width: 100%;
+  z-index: 10;
+}

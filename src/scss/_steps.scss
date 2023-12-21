@@ -1,0 +1,44 @@
+.steps {
+  background: url("../images/bg.webp") #121920C7 no-repeat;
+  background-size: cover;
+  padding-bottom: 96px;
+
+  .flex__wrapper:nth-child(3) {
+    justify-content: center;
+    gap: 210px;
+  }
+}
+
+.step {
+  max-width: 338px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.step__number {
+  color: #232A32;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.step__desc {
+  display: flex;
+  gap: 32px;
+}
+
+.step__image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  img {
+    //max-width: 330px;
+    width: 100%;
+  }
+}
+
+.step__form {
+  display: flex;
+  flex-direction: column;
+}

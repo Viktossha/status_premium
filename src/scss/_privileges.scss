@@ -1,0 +1,27 @@
+.privileges {
+  background: url("../images/bg.webp") #121920C7 no-repeat;
+  background-size: cover;
+
+  .flex__wrapper {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.privileges__card img{
+  max-width: 420px;
+  width: 100%;
+}
+
+.privileges__info {
+  max-width: 420px;
+  width: 100%;
+}
+
+.privileges__form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+.header {
+  padding-top: 38px;
+  padding-bottom: 78px;
+  background: linear-gradient(180deg, rgba(18, 25, 32, 0.95) 0%, rgba(18, 25, 32, 0.00) 100%);
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  //padding-top: 38px;
+  //padding-bottom: 78px;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

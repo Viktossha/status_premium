@@ -1,0 +1,41 @@
+.support {
+  padding-bottom: 30px;
+  .flex__wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+.support__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  width: 25%;
+  min-height: 400px;
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  a {
+    color: black;
+  }
+}
+
+.support__img {
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    margin-bottom: -62px;
+    margin-left: 31px;
+    margin-right: 31px;
+  }
+}
+
+.support__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 0 24px;
+}
