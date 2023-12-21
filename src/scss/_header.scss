@@ -3,6 +3,11 @@
   padding-bottom: 78px;
   margin-bottom: 75px;
   background: linear-gradient(180deg, rgba(18, 25, 32, 0.95) 0%, rgba(18, 25, 32, 0.00) 100%);
+
+  @media (max-width: $extra-large) {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
 }
 
 .header__info {

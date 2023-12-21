@@ -11,9 +11,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #121920;
+  background-color: $bg-color;
   font-family: 'Lato', sans-serif;
-  color: #FFFFFF;
+  color: $font-color;
   line-height: 1.2;
 }
 
@@ -22,9 +22,41 @@ body > * {
   width: 100%;
 }
 
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  box-shadow: none;
+  border: none;
+  //height: $global-input-height;
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 a {
   text-decoration: none;
-  color: #FFF;
+  color: $font-color;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
 }
 
 ul {
@@ -33,28 +65,55 @@ ul {
 
 button {
   background-color: unset;
+  border-radius: 5px;
+  border: 1px solid $secondary-color;
+  padding: 20px 22px;
+  width: 306px;
+  color: $font-color;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $bg-color;
+    transition: 0.5s;
+  }
 }
 
 section {
-  padding-top: 75px;
+  margin-bottom: 75px;
 }
 
 h2 {
-  color: #FFF;
+  color: $font-color;
   text-align: center;
   font-size: 38px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+
+  @media (max-width: $small) {
+    font-size: 30px;
+  }
 }
 
 .bg {
-  background: linear-gradient(180deg, rgba(18, 25, 32, 0.22) 0%, #121920 100%), url("../images/bg_main.webp") no-repeat;
+  background: linear-gradient(180deg, rgba(18, 25, 32, 0.0) 0%, $bg-color 100%), url("../images/bg_main.png") no-repeat;
   background-size: cover;
-  //opacity: 0.78;
+
+  @media (max-width: $xlarge) {
+    background-position: center;
+  }
+
+  @media (max-width: $medium) {
+    background-position: 55%;
+  }
 }
 
 .flex__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }

@@ -2,17 +2,24 @@ section.main
     .container
         .flex__wrapper
             .main__info
-                h1
+                h1.main__title
                     span Статус
-                    |  Премиум.
-                h2 Премиальный формат обслуживания
-                button Стать премиальным клиентом
-                p Назовите промокод #premium при обращении и получите скидку 15%
-                p Бесплатная парковка для владельцев карт премиального обслуживания STATUS Premium
+                    |  Премиум
+                h2.main__text Премиальный формат обслуживания
+                button.main__button Стать премиальным клиентом
+                p.main__extra Назовите промокод
+                    span  #premium
+                    |  при обращении и получите
+                    span  скидку 15%
+                p.main__extra
+                    span Бесплатная
+                    |  парковка для владельцев карт премиального обслуживания
+                    span  STATUS Premium
             .main__form
-                form
-                    p Перезвоним в течение 5 минут
-                    .form__inputs
-                        input
-                        input
-                    button Заказать звонок
+                fieldset
+                    form.form(action='#')
+                        p.form__title Перезвоним в течение 5 минут
+                        input.form__input(type='text' name='user' placeholder='Ваши фамилия, имя, отчество*' required)
+                        input.form__input(type='tel' name='phone' placeholder='Ваш телефон*' pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required)
+                    legend
+                        button.form__button(type='submit') Заказать звонок

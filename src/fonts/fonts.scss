@@ -38,3 +38,23 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Heavy.eot') format('eot'),
+  url('Lato-Heavy.woff2') format('woff2'),
+  url('Lato-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Thin.eot') format('eot'),
+  url('Lato-Thin.woff2') format('woff2'),
+  url('Lato-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+

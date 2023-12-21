@@ -1,21 +1,157 @@
 .main {
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
+  //height: 100vh;
+
+  @media (max-width: $xlarge) {
+    .flex__wrapper {
+      align-items: center;
+    }
+  }
 }
 
 .main__info {
   display: flex;
   flex-direction: column;
-  z-index: 10;
-
-  h1 {
-    margin: 135px 15px;
+  max-width: 600px;
+  
+  @media (max-width: $extra-large) {
+    max-width: none;
   }
 }
 
-form {
+.main__title {
+  margin: 60px 0 40px;
+  font-size: 64px;
+  font-weight: 700;
+  position: relative;
+
+  &::after {
+    content: '.';
+    position: absolute;
+    color: #F8BE4D;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $small) {
+    font-size: 50px;
+  }
+}
+
+.main__text {
+  font-size: 38px;
+  font-weight: 300;
+  text-align: left;
+
+  @media (max-width: $small) {
+    font-size: 30px;
+  }
+}
+
+.main__button {
+  margin: 46px 0 30px;
+}
+
+.main__extra {
+  max-width: 385px;
+  width: 100%;
+  color: $extra-color;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  position: relative;
+  margin-left: 30px;
+
+  @media (max-width: $extra-large) {
+    max-width: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -30px;
+    width: 24px;
+    height: 1px;
+    background: $secondary-color;
+  }
+
+  &:last-child {
+    margin: 16px 0 38px 30px;
+  }
+
+  span {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:nth-of-type(odd) {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main__form {
+  @media (max-width: $extra-large) {
+    margin: 0 auto;
+  }
+}
+
+.form {
+  //max-width: 278px;
+  width: 100%;
+  text-align: center;
+
+  p {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+.form__input {
+  border-radius: 5px;
+  background: #3A434C;
+  padding: 16px 20px;
+  color: $extra-color;
+  font-size: 15px;
+  font-weight: 400;
   max-width: 278px;
   width: 100%;
-  z-index: 10;
+}
+
+.form__input:first-of-type {
+  margin: 40px 0 18px;
+}
+
+.form__button {
+  width: 278px;
+  background-color: $secondary-color;
+  color: $bg-color;
+  &:hover {
+    background-color: transparent;
+    color: $font-color;
+  }
+}
+
+fieldset,
+legend,
+form {
+  transform: rotate(180deg);
+}
+
+fieldset {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 36px 34px 34px;
+  max-width: 330px;
+  width: 100%;
+
+  @media (max-width: $extra-large) {
+    max-width: 500px;
+  }
+}
+
+legend {
+  text-align: center;
 }
