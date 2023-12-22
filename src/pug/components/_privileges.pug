@@ -1,14 +1,17 @@
 section.privileges
     .container
-        h2 Привилегии
-        .flex__wrapper
-            .privileges__card
-                img(src='./images/card.webp')
-            .privileges__info
-                h3 Бесплатная парковка
-                p При обслуживании в офисе для владельцев карт премиального обслуживания STATUS Premium
-        h3 Запланировать встречу
-        form.privileges__form
-            input
-            input
-            button Запланировать встречу
+        .privileges__block
+            h2 Привилегии
+            .flex__wrapper
+                .privileges__card
+                    img(src='./images/card.webp')
+                .privileges__info
+                    h3.privileges__title Бесплатная парковка
+                    p.privileges__text При обслуживании в офисе для владельцев карт премиального обслуживания
+                        span  STATUS Premium
+        .privileges__form
+            h2.form__title Запланировать встречу
+            form.form
+                input.form__input(type='text' name='user' placeholder='Ваши фамилия, имя, отчество*' required)
+                input.form__input(type='tel' name='phone' placeholder='Ваш телефон*' required)
+                button.form__button Запланировать встречу
