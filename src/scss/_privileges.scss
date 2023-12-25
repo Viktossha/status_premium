@@ -44,7 +44,7 @@
   }
 
   .form__title {
-    font-size: 28px;
+    font-size: calc( (100vw - 360px) / (1440 - 360) * (28 - 24) + 24px);
     font-weight: 300;
     margin-bottom: 15px;
   }
@@ -130,15 +130,14 @@
 
 .privileges__title {
   color: $secondary-color;
-  font-size: 30px;
+  font-size: calc( (100vw - 360px) / (1440 - 360) * (30 - 22) + 22px);
   font-weight: 700;
   margin-bottom: 48px;
-  //line-height: 14px;
 }
 
 .privileges__text {
   color: $extra-color;
-  font-size: 24px;
+  font-size: calc( (100vw - 360px) / (1440 - 360) * (24 - 20) + 20px);
   font-weight: 400;
   line-height: 34px;
 
