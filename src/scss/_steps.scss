@@ -152,14 +152,12 @@
   font-size: 38px;
   font-style: normal;
   font-weight: 400;
-  line-height: 48px; /* 126.316% */
 }
 
 .step__text {
-  color: #88939E;
+  color: $extra-color;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
   max-width: 400px;
   margin: 20px 0 30px;
   padding-left: 18px;
@@ -189,10 +187,9 @@
 }
 
 .step__extra {
-  color: #88939E;
+  color: $extra-color;
   font-size: 16px;
   font-weight: 200;
-  line-height: 24px; /* 150% */
 
   @media (max-width: $large) {
     max-width: 330px;
