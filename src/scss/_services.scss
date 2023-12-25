@@ -5,11 +5,9 @@
     margin-bottom: 33px;
   }
 
-  @media (max-width: $xlarge) {
     .flex__wrapper {
       justify-content: center;
       gap: 30px;
-    }
   }
 }
 
