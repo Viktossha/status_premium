@@ -48,6 +48,15 @@ module.exports = {
             },
         ],
     },
+    resolve: {
+        alias: {
+            'jquery': path.join(__dirname, 'node_modules/jquery/dist/jquery'),
+            'inputmask.dependencyLib': path.join(__dirname, 'node_modules/jquery.inputmask/dist/inputmask/inputmask.dependencyLib'),
+            'inputmask' : path.join(__dirname, 'node_modules/jquery.inputmask/dist/inputmask/inputmask'),
+            'jquery.inputmask': path.join(__dirname, 'node_modules/jquery.inputmask/dist/inputmask/jquery.inputmask'),
+            'inputmask.numeric.extensions': path.join(__dirname, 'node_modules/jquery.inputmask/dist/inputmask/inputmask.numeric.extensions'),
+        },
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'src/pug/', 'index.pug'),
