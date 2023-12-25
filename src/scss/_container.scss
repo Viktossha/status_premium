@@ -1,4 +1,8 @@
 .container {
   margin: 0 auto;
-  width: 1170px;
+  max-width: 1050px;
+
+  @media (max-width: $xlarge) {
+    padding: 0 40px;
+  }
 }
