@@ -5,30 +5,34 @@ section.steps
             .step
                 p.step__number 01
                 .step__desc
-                    svg(width="60" height="60" viewBox="0 0 60 60" fill="none")
-                        use(xlink:href='./images/sprite.svg#paper')
+                    img(src='./images/paper.svg' alt='')
                     p Закажите звонок или заполните заявку
             .step
                 p.step__number 02
                 .step__desc
-                    svg(width="60" height="60" viewBox="0 0 60 60" fill="none")
-                        use(xlink:href='./images/sprite.svg#phone')
+                    img(src='./images/phone.svg' alt='')
                     p Мы перезвоним Вам в течение 5 минут
             .step
                 p.step__number 03
                 .step__desc
-                    svg(width="60" height="60" viewBox="0 0 60 60" fill="none")
-                        use(xlink:href='./images/sprite.svg#support')
+                    img(src='./images/support.svg' alt='')
                     p Персональный менеджер предложит набор услуг согласно Вашим задачам
         .flex__wrapper
             .step__image
-                img(src='./images/group_1.webp')
-                p Назовите промокод #premium при обращении и получите скидку 15%
-            .step__form
-                h3 Вы получаете
-                p Приоритетное обслуживание, быстрые экспертные решения
-                form
-                    p Стать премиальным клиентом
-                    input
-                    input
-                    button Стать клиентом
+                img(src='./images/group_1.webp' alt='')
+                p.step__extra Назовите промокод
+                    span  #premium
+                    |  при обращении и получите
+                    span  скидку 15%
+            .step__block
+                h3.step__title Вы получаете
+                p.step__text Приоритетное обслуживание, быстрые экспертные решения
+                .float__form
+                    form.form(id='step-form' action='#' method='#')
+                        fieldset
+                            .form__wrapper
+                                p.form__title Стать премиальным клиентом
+                                input.form__input(type='text' name='user' placeholder='Ваши фамилия, имя, отчество*' required)
+                                input.form__input(type='tel' name='phone' placeholder='Ваш телефон*' required)
+                            legend
+                                button.form__button(type='submit') Стать клиентом
