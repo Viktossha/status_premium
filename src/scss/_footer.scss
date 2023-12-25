@@ -1,17 +1,14 @@
 .footer {
   background-color: #0D141B;
   padding: 34px 0;
-}
 
-.footer__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  .flex__wrapper {
+    align-items: center;
 
-  @media (max-width: $small) {
-    gap: 20px;
-    justify-content: center;
+    @media (max-width: $small) {
+      gap: 20px;
+      justify-content: center;
+    }
   }
 }
 
