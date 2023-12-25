@@ -29,6 +29,11 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
+  margin-right: 32px;
+
+  @media (max-width: $medium) {
+    margin-right: 0;
+  }
 
   span {
     font-weight: bold;
