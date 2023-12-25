@@ -1,6 +1,10 @@
 .privileges {
-  background: url("../images/bg.webp") #121920C7 no-repeat;
+  background: url("../images/bg.png") #121920C7 no-repeat;
   background-size: cover;
+
+  @media (max-width: $extra-large) {
+    background-position: center;
+  }
 
   h2 {
     margin-bottom: 42px;
@@ -10,7 +14,7 @@
     justify-content: center;
     gap: 30px;
     align-items: center;
-    padding-top: 42px;
+    padding-top: 24px;
 
     @media (max-width: $large) {
       flex-direction: column;
