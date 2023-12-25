@@ -6,13 +6,18 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
+  font-family: Lato, sans-serif;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: $bg-color;
-  font-family: 'Lato', sans-serif;
   color: $font-color;
   line-height: 1.2;
 }
@@ -67,14 +72,18 @@ button {
   background-color: unset;
   border-radius: 5px;
   border: 1px solid $secondary-color;
-  padding: 20px 22px;
-  width: 306px;
+  padding: 20px;
+  width: 302px;
   color: $font-color;
   text-align: center;
   font-size: 17px;
   font-weight: 700;
   cursor: pointer;
   transition: 0.5s;
+
+  @media (max-width: $extra-small) {
+    width: auto;
+  }
 
   &:hover {
     background-color: $secondary-color;
@@ -90,13 +99,13 @@ section {
 h2 {
   color: $font-color;
   text-align: center;
-  font-size: 38px;
   font-style: normal;
   font-weight: 300;
   padding: 32px 0;
+  font-size: calc( (100vw - 360px) / (1440 - 360) * (38 - 25) + 25px);
 
   @media (max-width: $small) {
-    font-size: 30px;
+    padding: 0;
   }
 }
 
